@@ -5,9 +5,9 @@ module HockeyApp
     include ActiveModel::Validations
     include ActiveModelCompliance
 
-    ATTRIBUTES = [:id, :notes, :shortversion, :version, :mandatory, :timestamp, :appsize,  :title, :download_url]
+    ATTRIBUTES = [:id, :notes, :shortversion, :version, :mandatory, :timestamp, :appsize,  :title, :download_url, :commit_sha, :repository_url]
 
-    POST_PAYLOAD = [:status, :ipa, :dsym, :notes_type, :notify, :tags]
+    POST_PAYLOAD = [:status, :ipa, :dsym, :notes_type, :notify, :tags, :commit_sha, :repository_url]
 
     NOTES_TYPES_TO_SYM = {
         0 => :textile,

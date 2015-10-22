@@ -77,7 +77,7 @@ module HockeyApp
           :tags => tags
       }
       params.reject!{|_,v|v.nil?}
-      self.class.post "/apps/#{app_id}/app_versions/upload", :body => params
+      self.class.post "/apps/#{app_id}/upload", :body => params
     end
 
 

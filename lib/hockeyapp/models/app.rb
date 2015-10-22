@@ -9,7 +9,7 @@ module HockeyApp
     IOS = 'iOS'
 
     ATTRIBUTES = [:title, :minimum_os_version, :status, :company, :owner, :bundle_identifier, :device_family, :platform,
-        :public_identifier, :role, :release_type]
+        :public_identifier, :role, :release_type, :commit_sha, :repository_url]
 
     POST_PAYLOAD = [:status,:notes_type, :notify]
 
